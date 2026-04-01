@@ -18,13 +18,21 @@ main {
   }
 table {
   display: flex;
+  border: 1px solid red;
   flex: 0 0 auto;
   align-items: center;
   padding: 10px;
   flex-direction: column;
-  gap: 10px;
-  justify-content: flex-start;
+  width: auto;
+  height: 100px;
+  table-layout: fixed;
 }
+table, th, td {
+  padding: 10px;
+}
+
+tr:hover {background-color: chartreuse;}
+tr:nth-child(even) {background-color: #716e6e1b;}
 aside {
     flex: 0 0 232px;
     padding: 10px;
