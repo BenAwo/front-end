@@ -1,6 +1,7 @@
 html,
   body {
     height: 100%; 
+    width: 100%;
   }
 
 body {
@@ -15,6 +16,7 @@ body {
   }
 main {
     flex: 1 0 auto;
+    height: 100vh;
     display: flex; 
   }
 table {
@@ -25,7 +27,7 @@ table {
   padding: 10px;
   flex-direction: column;
   width: auto;
-  height: 100px;
+  height: 100%;
   table-layout: fixed;
 }
 table, th, td {
@@ -174,4 +176,24 @@ footer input[type="text"] {
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 0.9em;
+}
+.main
+{
+  display:flex;
+  flex-direction: row;
+  height:100vh
+}
+
+.task-bar{
+  background-color: rgb(205, 205, 205, 0.918);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+
+}
+.task-bar-item{
+  display: flex;
+  gap:1rem;
+  justify-content: space-between;
 }
